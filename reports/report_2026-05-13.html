@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>文京区 物件モニター 2026年05月13日（水）</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  body{font-family:"Hiragino Sans","Helvetica Neue",Arial,sans-serif;background:#f4f6f9;font-size:.9rem}
+  .top-bar{background:linear-gradient(135deg,#1a3c5e,#2d6a9f);color:#fff;padding:1.2rem 0}
+  .stat-card{background:#fff;border-radius:10px;padding:1rem;box-shadow:0 2px 6px rgba(0,0,0,.08);text-align:center}
+  .stat-n{font-size:1.6rem;font-weight:700;color:#1a3c5e}
+  .stat-l{color:#888;font-size:.8rem}
+  .tab-content{background:#fff;border:1px solid #dee2e6;border-top:none;border-radius:0 0 10px 10px;padding:1.5rem}
+  .nav-tabs .nav-link{color:#555}
+  .nav-tabs .nav-link.active{font-weight:600;color:#1a3c5e}
+  table th{background:#1a3c5e;color:#fff;white-space:nowrap;font-size:.78rem}
+  table td{font-size:.78rem;vertical-align:middle}
+  .tc{text-align:center}
+  .price-col{font-weight:600;color:#1a3c5e;white-space:nowrap}
+  .badge-new{background:#27ae60;color:#fff;padding:1px 5px;border-radius:3px;font-size:.7rem;margin-left:4px}
+  .site-btn{font-size:.72rem;padding:1px 5px;background:#eee;border-radius:3px;text-decoration:none;color:#333;margin:1px;display:inline-block}
+  .site-btn:hover{background:#1a3c5e;color:#fff}
+  h3{color:#1a3c5e;font-size:1rem;margin-bottom:1rem}
+  .bookmark-tip{background:#fff8e1;border:1px solid #ffc107;border-radius:6px;padding:.6rem 1rem;font-size:.82rem;margin-bottom:1rem}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+    <h1 class="h4 mb-0">🏢 文京区 一棟アパート モニター</h1>
+    <small class="opacity-75">巡回日: 2026年05月13日（水） ｜ 3億円以下 ｜ 楽待・健美家</small>
+  </div>
+</div>
+
+<div class="container mt-3">
+
+  <!-- ナビゲーション -->
+  <div class="d-flex gap-2 mb-3 align-items-center flex-wrap">
+    <a href="index.html" class="btn btn-outline-secondary btn-sm">📋 過去レポート一覧</a>
+    <span class="text-muted" style="font-size:.82rem">📌 ブックマークは <strong>latest.html</strong> へ。実行のたびに自動更新されます。</span>
+  </div>
+
+  <!-- 統計カード -->
+  <div class="row g-3 mb-3">
+    <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-n">13</div><div class="stat-l">掲載件数</div></div></div>
+    <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-n" style="color:#27ae60">13</div><div class="stat-l">新着</div></div></div>
+    <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-n">1億9,829万円</div><div class="stat-l">平均価格</div></div></div>
+    <div class="col-6 col-md-3"><div class="stat-card"><div class="stat-n">4.38%</div><div class="stat-l">平均利回り</div></div></div>
+  </div>
+
+  <!-- タブ -->
+  <ul class="nav nav-tabs" id="mainTab">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-list">📋 物件一覧</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-area">🗺️ エリア別</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-trend">📈 推移グラフ</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-eval">⭐ 評価</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-alert">🔔 更新情報</button></li>
+  </ul>
+
+  <div class="tab-content" id="mainTabContent">
+
+    <!-- 物件一覧 -->
+    <div class="tab-pane fade show active" id="tab-list">
+      <h3>全物件一覧（価格順）</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead><tr>
+            <th>所在地</th><th>最寄り駅</th><th>徒歩</th><th>価格</th>
+            <th>利回り</th><th>築年</th><th>耐震</th><th>戸数</th>
+            <th>土地</th><th>建物</th><th>構造</th><th>評価</th><th>リンク</th>
+          </tr></thead>
+          <tbody><tr><td><span style="color:#8e44ad;font-size:.7rem">●</span> 文京区小石川5丁目<span class="badge-new">NEW</span></td><td>茗荷谷駅</td><td class="tc">9分</td><td class="price-col">6,580万円</td><td class="tc">6.93%</td><td class="tc">1957年</td><td class="tc">⚠️旧耐震</td><td class="tc">2戸</td><td class="tc">66㎡</td><td class="tc">50㎡</td><td class="tc">木造</td><td class="tc" style="font-weight:700;color:#e74c3c">D</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3478744/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td><span style="color:#27ae60;font-size:.7rem">●</span> 文京区白山4丁目<span class="badge-new">NEW</span></td><td>白山駅</td><td class="tc">6分</td><td class="price-col">9,900万円</td><td class="tc">2.12%</td><td class="tc">1973年</td><td class="tc">⚠️旧耐震</td><td class="tc">2戸</td><td class="tc">36㎡</td><td class="tc">50㎡</td><td class="tc">鉄骨造</td><td class="tc" style="font-weight:700;color:#e74c3c">D</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3533742/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td><span style="color:#2980b9;font-size:.7rem">●</span> 文京区千石3丁目<span class="badge-new">NEW</span></td><td>巣鴨駅</td><td class="tc">7分</td><td class="price-col">1億1,500万円</td><td class="tc">4.53%</td><td class="tc">1989年</td><td class="tc">✅新耐震</td><td class="tc">4戸</td><td class="tc">66㎡</td><td class="tc">150㎡</td><td class="tc">鉄骨造</td><td class="tc" style="font-weight:700;color:#2980b9">B+</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3581686/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.kenbiya.com/pp2/s/tokyo/bunkyo-ku/re_4404555eo0/" target="_blank" class="site-btn">健美家</a> <a href="https://www.athome.co.jp/buy_other/1017832387/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#2980b9;font-size:.7rem">●</span> 文京区白山5丁目<span class="badge-new">NEW</span></td><td>千石駅</td><td class="tc">7分</td><td class="price-col">1億3,500万円</td><td class="tc">―</td><td class="tc">1995年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">130㎡</td><td class="tc">190㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#3498db">B</td><td><a href="https://www.athome.co.jp/buy_other/1017852991/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#e67e22;font-size:.7rem">●</span> 文京区大塚4丁目<span class="badge-new">NEW</span></td><td>新大塚駅</td><td class="tc">6分</td><td class="price-col">1億7,400万円</td><td class="tc">4.3%</td><td class="tc">2011年</td><td class="tc">✅新耐震</td><td class="tc">6戸</td><td class="tc">96㎡</td><td class="tc">149㎡</td><td class="tc">木造</td><td class="tc" style="font-weight:700;color:#2980b9">B+</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3511598/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区千駄木2丁目<span class="badge-new">NEW</span></td><td>千駄木駅</td><td class="tc">5分</td><td class="price-col">1億7,500万円</td><td class="tc">―</td><td class="tc">1988年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">86㎡</td><td class="tc">212㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#3498db">B</td><td><a href="https://www.athome.co.jp/buy_other/6988936917/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#2980b9;font-size:.7rem">●</span> 文京区千石4丁目<span class="badge-new">NEW</span></td><td>千石駅</td><td class="tc">5分</td><td class="price-col">1億8,600万円</td><td class="tc">4.6%</td><td class="tc">2008年</td><td class="tc">✅新耐震</td><td class="tc">12戸</td><td class="tc">94㎡</td><td class="tc">128㎡</td><td class="tc">木造</td><td class="tc" style="font-weight:700;color:#27ae60">A</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3540768/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.kenbiya.com/pp2/s/tokyo/bunkyo-ku/re_4475463cby/" target="_blank" class="site-btn">健美家</a></td></tr>
+<tr><td><span style="color:#e67e22;font-size:.7rem">●</span> 文京区大塚5丁目<span class="badge-new">NEW</span></td><td>新大塚駅</td><td class="tc">3分</td><td class="price-col">2億5,000万円</td><td class="tc">4.05%</td><td class="tc">1985年</td><td class="tc">✅新耐震</td><td class="tc">8戸</td><td class="tc">123㎡</td><td class="tc">287㎡</td><td class="tc">RC造</td><td class="tc" style="font-weight:700;color:#27ae60">A</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3619365/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.athome.co.jp/buy_other/1105295619/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区本駒込4丁目<span class="badge-new">NEW</span></td><td>田端駅</td><td class="tc">11分</td><td class="price-col">2億5,000万円</td><td class="tc">―</td><td class="tc">2008年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">115㎡</td><td class="tc">196㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#e74c3c">D</td><td><a href="https://www.athome.co.jp/buy_other/6987487969/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#2980b9;font-size:.7rem">●</span> 文京区千石1丁目<span class="badge-new">NEW</span></td><td>千石駅</td><td class="tc">3分</td><td class="price-col">2億6,000万円</td><td class="tc">―</td><td class="tc">2023年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">41㎡</td><td class="tc">144㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#3498db">B</td><td><a href="https://www.athome.co.jp/buy_other/1074235089/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区千駄木5丁目<span class="badge-new">NEW</span></td><td>千駄木駅</td><td class="tc">3分</td><td class="price-col">2億7,000万円</td><td class="tc">4.13%</td><td class="tc">2014年</td><td class="tc">✅新耐震</td><td class="tc">11戸</td><td class="tc">139㎡</td><td class="tc">324㎡</td><td class="tc">RC造</td><td class="tc" style="font-weight:700;color:#2980b9">B+</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3588639/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区本郷3丁目<span class="badge-new">NEW</span></td><td>本郷三丁目駅</td><td class="tc">6分</td><td class="price-col">2億9,900万円</td><td class="tc">―</td><td class="tc">2022年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">43㎡</td><td class="tc">167㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#e67e22">C</td><td><a href="https://www.athome.co.jp/buy_other/1009260291/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区本郷3丁目<span class="badge-new">NEW</span></td><td>本郷三丁目駅</td><td class="tc">6分</td><td class="price-col">2億9,900万円</td><td class="tc">―</td><td class="tc">2022年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">44㎡</td><td class="tc">167㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#e67e22">C</td><td><a href="https://www.athome.co.jp/buy_other/1134394308/" target="_blank" class="site-btn">アットホーム</a></td></tr></tbody>
+        </table>
+      </div>
+      <small class="text-muted">● 色はエリア区分。太字の最寄り駅は指定ターゲット駅。</small>
+    </div>
+
+    <!-- エリア別 -->
+    <div class="tab-pane fade" id="tab-area">
+      <h3>エリア別物件一覧</h3>
+      
+        <div class="mb-4">
+          <h4 style="color:#95a5a6;border-left:4px solid #95a5a6;padding-left:.6rem">
+            その他
+            <small class="text-muted ms-2" style="font-size:.8rem">5件 ／ 平均2億5,860万円 ／ 平均利回り4.13%</small>
+          </h4>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered table-hover">
+              <thead><tr>
+                <th>所在地</th><th>最寄り駅</th><th>徒歩</th><th>価格</th>
+                <th>利回り</th><th>築年</th><th>耐震</th><th>戸数</th>
+                <th>土地</th><th>建物</th><th>構造</th><th>評価</th><th>リンク</th>
+              </tr></thead>
+              <tbody><tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区千駄木2丁目<span class="badge-new">NEW</span></td><td>千駄木駅</td><td class="tc">5分</td><td class="price-col">1億7,500万円</td><td class="tc">―</td><td class="tc">1988年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">86㎡</td><td class="tc">212㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#3498db">B</td><td><a href="https://www.athome.co.jp/buy_other/6988936917/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区本駒込4丁目<span class="badge-new">NEW</span></td><td>田端駅</td><td class="tc">11分</td><td class="price-col">2億5,000万円</td><td class="tc">―</td><td class="tc">2008年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">115㎡</td><td class="tc">196㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#e74c3c">D</td><td><a href="https://www.athome.co.jp/buy_other/6987487969/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区千駄木5丁目<span class="badge-new">NEW</span></td><td>千駄木駅</td><td class="tc">3分</td><td class="price-col">2億7,000万円</td><td class="tc">4.13%</td><td class="tc">2014年</td><td class="tc">✅新耐震</td><td class="tc">11戸</td><td class="tc">139㎡</td><td class="tc">324㎡</td><td class="tc">RC造</td><td class="tc" style="font-weight:700;color:#2980b9">B+</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3588639/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区本郷3丁目<span class="badge-new">NEW</span></td><td>本郷三丁目駅</td><td class="tc">6分</td><td class="price-col">2億9,900万円</td><td class="tc">―</td><td class="tc">2022年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">43㎡</td><td class="tc">167㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#e67e22">C</td><td><a href="https://www.athome.co.jp/buy_other/1009260291/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#95a5a6;font-size:.7rem">●</span> 文京区本郷3丁目<span class="badge-new">NEW</span></td><td>本郷三丁目駅</td><td class="tc">6分</td><td class="price-col">2億9,900万円</td><td class="tc">―</td><td class="tc">2022年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">44㎡</td><td class="tc">167㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#e67e22">C</td><td><a href="https://www.athome.co.jp/buy_other/1134394308/" target="_blank" class="site-btn">アットホーム</a></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h4 style="color:#2980b9;border-left:4px solid #2980b9;padding-left:.6rem">
+            千石エリア
+            <small class="text-muted ms-2" style="font-size:.8rem">4件 ／ 平均1億7,400万円 ／ 平均利回り4.56%</small>
+          </h4>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered table-hover">
+              <thead><tr>
+                <th>所在地</th><th>最寄り駅</th><th>徒歩</th><th>価格</th>
+                <th>利回り</th><th>築年</th><th>耐震</th><th>戸数</th>
+                <th>土地</th><th>建物</th><th>構造</th><th>評価</th><th>リンク</th>
+              </tr></thead>
+              <tbody><tr><td><span style="color:#2980b9;font-size:.7rem">●</span> 文京区千石3丁目<span class="badge-new">NEW</span></td><td>巣鴨駅</td><td class="tc">7分</td><td class="price-col">1億1,500万円</td><td class="tc">4.53%</td><td class="tc">1989年</td><td class="tc">✅新耐震</td><td class="tc">4戸</td><td class="tc">66㎡</td><td class="tc">150㎡</td><td class="tc">鉄骨造</td><td class="tc" style="font-weight:700;color:#2980b9">B+</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3581686/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.kenbiya.com/pp2/s/tokyo/bunkyo-ku/re_4404555eo0/" target="_blank" class="site-btn">健美家</a> <a href="https://www.athome.co.jp/buy_other/1017832387/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#2980b9;font-size:.7rem">●</span> 文京区白山5丁目<span class="badge-new">NEW</span></td><td>千石駅</td><td class="tc">7分</td><td class="price-col">1億3,500万円</td><td class="tc">―</td><td class="tc">1995年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">130㎡</td><td class="tc">190㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#3498db">B</td><td><a href="https://www.athome.co.jp/buy_other/1017852991/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td><span style="color:#2980b9;font-size:.7rem">●</span> 文京区千石4丁目<span class="badge-new">NEW</span></td><td>千石駅</td><td class="tc">5分</td><td class="price-col">1億8,600万円</td><td class="tc">4.6%</td><td class="tc">2008年</td><td class="tc">✅新耐震</td><td class="tc">12戸</td><td class="tc">94㎡</td><td class="tc">128㎡</td><td class="tc">木造</td><td class="tc" style="font-weight:700;color:#27ae60">A</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3540768/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.kenbiya.com/pp2/s/tokyo/bunkyo-ku/re_4475463cby/" target="_blank" class="site-btn">健美家</a></td></tr>
+<tr><td><span style="color:#2980b9;font-size:.7rem">●</span> 文京区千石1丁目<span class="badge-new">NEW</span></td><td>千石駅</td><td class="tc">3分</td><td class="price-col">2億6,000万円</td><td class="tc">―</td><td class="tc">2023年</td><td class="tc">✅新耐震</td><td class="tc">―</td><td class="tc">41㎡</td><td class="tc">144㎡</td><td class="tc">―</td><td class="tc" style="font-weight:700;color:#3498db">B</td><td><a href="https://www.athome.co.jp/buy_other/1074235089/" target="_blank" class="site-btn">アットホーム</a></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h4 style="color:#e67e22;border-left:4px solid #e67e22;padding-left:.6rem">
+            大塚エリア
+            <small class="text-muted ms-2" style="font-size:.8rem">2件 ／ 平均2億1,200万円 ／ 平均利回り4.17%</small>
+          </h4>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered table-hover">
+              <thead><tr>
+                <th>所在地</th><th>最寄り駅</th><th>徒歩</th><th>価格</th>
+                <th>利回り</th><th>築年</th><th>耐震</th><th>戸数</th>
+                <th>土地</th><th>建物</th><th>構造</th><th>評価</th><th>リンク</th>
+              </tr></thead>
+              <tbody><tr><td><span style="color:#e67e22;font-size:.7rem">●</span> 文京区大塚4丁目<span class="badge-new">NEW</span></td><td>新大塚駅</td><td class="tc">6分</td><td class="price-col">1億7,400万円</td><td class="tc">4.3%</td><td class="tc">2011年</td><td class="tc">✅新耐震</td><td class="tc">6戸</td><td class="tc">96㎡</td><td class="tc">149㎡</td><td class="tc">木造</td><td class="tc" style="font-weight:700;color:#2980b9">B+</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3511598/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td><span style="color:#e67e22;font-size:.7rem">●</span> 文京区大塚5丁目<span class="badge-new">NEW</span></td><td>新大塚駅</td><td class="tc">3分</td><td class="price-col">2億5,000万円</td><td class="tc">4.05%</td><td class="tc">1985年</td><td class="tc">✅新耐震</td><td class="tc">8戸</td><td class="tc">123㎡</td><td class="tc">287㎡</td><td class="tc">RC造</td><td class="tc" style="font-weight:700;color:#27ae60">A</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3619365/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.athome.co.jp/buy_other/1105295619/" target="_blank" class="site-btn">アットホーム</a></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h4 style="color:#8e44ad;border-left:4px solid #8e44ad;padding-left:.6rem">
+            小石川エリア
+            <small class="text-muted ms-2" style="font-size:.8rem">1件 ／ 平均6,580万円 ／ 平均利回り6.93%</small>
+          </h4>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered table-hover">
+              <thead><tr>
+                <th>所在地</th><th>最寄り駅</th><th>徒歩</th><th>価格</th>
+                <th>利回り</th><th>築年</th><th>耐震</th><th>戸数</th>
+                <th>土地</th><th>建物</th><th>構造</th><th>評価</th><th>リンク</th>
+              </tr></thead>
+              <tbody><tr><td><span style="color:#8e44ad;font-size:.7rem">●</span> 文京区小石川5丁目<span class="badge-new">NEW</span></td><td>茗荷谷駅</td><td class="tc">9分</td><td class="price-col">6,580万円</td><td class="tc">6.93%</td><td class="tc">1957年</td><td class="tc">⚠️旧耐震</td><td class="tc">2戸</td><td class="tc">66㎡</td><td class="tc">50㎡</td><td class="tc">木造</td><td class="tc" style="font-weight:700;color:#e74c3c">D</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3478744/show.html" target="_blank" class="site-btn">楽待</a></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <h4 style="color:#27ae60;border-left:4px solid #27ae60;padding-left:.6rem">
+            白山エリア
+            <small class="text-muted ms-2" style="font-size:.8rem">1件 ／ 平均9,900万円 ／ 平均利回り2.12%</small>
+          </h4>
+          <div class="table-responsive">
+            <table class="table table-sm table-bordered table-hover">
+              <thead><tr>
+                <th>所在地</th><th>最寄り駅</th><th>徒歩</th><th>価格</th>
+                <th>利回り</th><th>築年</th><th>耐震</th><th>戸数</th>
+                <th>土地</th><th>建物</th><th>構造</th><th>評価</th><th>リンク</th>
+              </tr></thead>
+              <tbody><tr><td><span style="color:#27ae60;font-size:.7rem">●</span> 文京区白山4丁目<span class="badge-new">NEW</span></td><td>白山駅</td><td class="tc">6分</td><td class="price-col">9,900万円</td><td class="tc">2.12%</td><td class="tc">1973年</td><td class="tc">⚠️旧耐震</td><td class="tc">2戸</td><td class="tc">36㎡</td><td class="tc">50㎡</td><td class="tc">鉄骨造</td><td class="tc" style="font-weight:700;color:#e74c3c">D</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3533742/show.html" target="_blank" class="site-btn">楽待</a></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+
+    <!-- 推移グラフ -->
+    <div class="tab-pane fade" id="tab-trend">
+      <h3>相場推移グラフ</h3>
+      
+      
+      <div class="row g-3">
+        <div class="col-md-6"><div style="height:240px"><canvas id="c1"></canvas></div></div>
+        <div class="col-md-6"><div style="height:240px"><canvas id="c2"></canvas></div></div>
+        <div class="col-md-6"><div style="height:240px"><canvas id="c3"></canvas></div></div>
+        <div class="col-md-6"><div style="height:240px"><canvas id="c4"></canvas></div></div>
+      </div>
+      <small class="text-muted mt-2 d-block">※ データが蓄積されるにつれてグラフが充実します。</small>
+      
+    </div>
+
+    <!-- 評価 -->
+    <div class="tab-pane fade" id="tab-eval">
+      <h3>個別物件評価</h3>
+      <table class="table table-bordered table-hover">
+        <thead><tr><th>所在地</th><th>評価</th><th>評価コメント</th><th>リンク</th></tr></thead>
+        <tbody><tr><td>文京区小石川5丁目</td><td style="font-weight:700;color:#e74c3c">D</td><td>旧耐震（融資困難）</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3478744/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td>文京区白山4丁目</td><td style="font-weight:700;color:#e74c3c">D</td><td>旧耐震（融資困難）</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3533742/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td>文京区千石3丁目</td><td style="font-weight:700;color:#2980b9">B+</td><td>問題なし</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3581686/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.kenbiya.com/pp2/s/tokyo/bunkyo-ku/re_4404555eo0/" target="_blank" class="site-btn">健美家</a> <a href="https://www.athome.co.jp/buy_other/1017832387/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td>文京区白山5丁目</td><td style="font-weight:700;color:#3498db">B</td><td>利回り不明</td><td><a href="https://www.athome.co.jp/buy_other/1017852991/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td>文京区大塚4丁目</td><td style="font-weight:700;color:#2980b9">B+</td><td>問題なし</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3511598/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td>文京区千駄木2丁目</td><td style="font-weight:700;color:#3498db">B</td><td>利回り不明</td><td><a href="https://www.athome.co.jp/buy_other/6988936917/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td>文京区千石4丁目</td><td style="font-weight:700;color:#27ae60">A</td><td>問題なし</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3540768/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.kenbiya.com/pp2/s/tokyo/bunkyo-ku/re_4475463cby/" target="_blank" class="site-btn">健美家</a></td></tr>
+<tr><td>文京区大塚5丁目</td><td style="font-weight:700;color:#27ae60">A</td><td>問題なし</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3619365/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.athome.co.jp/buy_other/1105295619/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td>文京区本駒込4丁目</td><td style="font-weight:700;color:#e74c3c">D</td><td>利回り不明・駅から遠め(11分)</td><td><a href="https://www.athome.co.jp/buy_other/6987487969/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td>文京区千石1丁目</td><td style="font-weight:700;color:#3498db">B</td><td>利回り不明</td><td><a href="https://www.athome.co.jp/buy_other/1074235089/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td>文京区千駄木5丁目</td><td style="font-weight:700;color:#2980b9">B+</td><td>問題なし</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3588639/show.html" target="_blank" class="site-btn">楽待</a></td></tr>
+<tr><td>文京区本郷3丁目</td><td style="font-weight:700;color:#e67e22">C</td><td>利回り不明</td><td><a href="https://www.athome.co.jp/buy_other/1009260291/" target="_blank" class="site-btn">アットホーム</a></td></tr>
+<tr><td>文京区本郷3丁目</td><td style="font-weight:700;color:#e67e22">C</td><td>利回り不明</td><td><a href="https://www.athome.co.jp/buy_other/1134394308/" target="_blank" class="site-btn">アットホーム</a></td></tr></tbody>
+      </table>
+      <div class="mt-3 p-3" style="background:#f8f9fa;border-radius:6px;font-size:.82rem">
+        <strong>評価基準：</strong><br>
+        <span style="color:#27ae60">A</span>: 利回り4.5%以上・新耐震・駅7分以内・戸数4戸以上の条件を高水準で満たす<br>
+        <span style="color:#2980b9">B+/B</span>: 概ね良好。一部条件が不足<br>
+        <span style="color:#e67e22">C</span>: 要確認事項あり<br>
+        <span style="color:#e74c3c">D</span>: 旧耐震・利回り異常など重大な懸念あり
+      </div>
+    </div>
+
+    <!-- 更新情報 -->
+    <div class="tab-pane fade" id="tab-alert">
+      <h3>前回比 更新情報</h3>
+      
+        <div class="alert alert-success">
+          <strong>🟢 新着物件（13件）</strong>
+          <table class="table table-sm table-bordered mt-2 mb-0 bg-white">
+            <thead><tr><th>所在地</th><th>価格</th><th>駅</th><th>徒歩</th><th>利回り</th><th>リンク</th></tr></thead>
+            <tbody><tr><td>文京区小石川5丁目<span class="badge-new">NEW</span></td><td>6,580万円</td><td>茗荷谷駅</td><td>9分</td><td>6.93%</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3478744/show.html" target="_blank" class="site-btn">楽待</a></td></tr><tr><td>文京区白山4丁目<span class="badge-new">NEW</span></td><td>9,900万円</td><td>白山駅</td><td>6分</td><td>2.12%</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3533742/show.html" target="_blank" class="site-btn">楽待</a></td></tr><tr><td>文京区千石3丁目<span class="badge-new">NEW</span></td><td>1億1,500万円</td><td>巣鴨駅</td><td>7分</td><td>4.53%</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3581686/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.kenbiya.com/pp2/s/tokyo/bunkyo-ku/re_4404555eo0/" target="_blank" class="site-btn">健美家</a> <a href="https://www.athome.co.jp/buy_other/1017832387/" target="_blank" class="site-btn">アットホーム</a></td></tr><tr><td>文京区白山5丁目<span class="badge-new">NEW</span></td><td>1億3,500万円</td><td>千石駅</td><td>7分</td><td>―%</td><td><a href="https://www.athome.co.jp/buy_other/1017852991/" target="_blank" class="site-btn">アットホーム</a></td></tr><tr><td>文京区大塚4丁目<span class="badge-new">NEW</span></td><td>1億7,400万円</td><td>新大塚駅</td><td>6分</td><td>4.3%</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3511598/show.html" target="_blank" class="site-btn">楽待</a></td></tr><tr><td>文京区千駄木2丁目<span class="badge-new">NEW</span></td><td>1億7,500万円</td><td>千駄木駅</td><td>5分</td><td>―%</td><td><a href="https://www.athome.co.jp/buy_other/6988936917/" target="_blank" class="site-btn">アットホーム</a></td></tr><tr><td>文京区千石4丁目<span class="badge-new">NEW</span></td><td>1億8,600万円</td><td>千石駅</td><td>5分</td><td>4.6%</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3540768/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.kenbiya.com/pp2/s/tokyo/bunkyo-ku/re_4475463cby/" target="_blank" class="site-btn">健美家</a></td></tr><tr><td>文京区大塚5丁目<span class="badge-new">NEW</span></td><td>2億5,000万円</td><td>新大塚駅</td><td>3分</td><td>4.05%</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3619365/show.html" target="_blank" class="site-btn">楽待</a> <a href="https://www.athome.co.jp/buy_other/1105295619/" target="_blank" class="site-btn">アットホーム</a></td></tr><tr><td>文京区本駒込4丁目<span class="badge-new">NEW</span></td><td>2億5,000万円</td><td>田端駅</td><td>11分</td><td>―%</td><td><a href="https://www.athome.co.jp/buy_other/6987487969/" target="_blank" class="site-btn">アットホーム</a></td></tr><tr><td>文京区千石1丁目<span class="badge-new">NEW</span></td><td>2億6,000万円</td><td>千石駅</td><td>3分</td><td>―%</td><td><a href="https://www.athome.co.jp/buy_other/1074235089/" target="_blank" class="site-btn">アットホーム</a></td></tr><tr><td>文京区千駄木5丁目<span class="badge-new">NEW</span></td><td>2億7,000万円</td><td>千駄木駅</td><td>3分</td><td>4.13%</td><td><a href="https://www.rakumachi.jp/syuuekibukken/kanto/tokyo/dim1002/3588639/show.html" target="_blank" class="site-btn">楽待</a></td></tr><tr><td>文京区本郷3丁目<span class="badge-new">NEW</span></td><td>2億9,900万円</td><td>本郷三丁目駅</td><td>6分</td><td>―%</td><td><a href="https://www.athome.co.jp/buy_other/1009260291/" target="_blank" class="site-btn">アットホーム</a></td></tr><tr><td>文京区本郷3丁目<span class="badge-new">NEW</span></td><td>2億9,900万円</td><td>本郷三丁目駅</td><td>6分</td><td>―%</td><td><a href="https://www.athome.co.jp/buy_other/1134394308/" target="_blank" class="site-btn">アットホーム</a></td></tr></tbody>
+          </table>
+        </div>
+      <p class="text-muted">消滅した物件はありません。</p>
+    </div>
+
+  </div><!-- /tab-content -->
+</div><!-- /container -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const opt = {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}}};
+new Chart(document.getElementById("c1"),{type:"line",data:{labels:["2026-05-13", "2026-05-16", "2026-05-17", "2026-05-18"],datasets:[{label:"掲載件数",data:[13, 8, 6, 6],borderColor:"#2980b9",fill:true,backgroundColor:"#2980b910",tension:0.3}]},options:{...opt,plugins:{...opt.plugins,title:{display:true,text:"掲載件数推移"}}}});
+new Chart(document.getElementById("c2"),{type:"line",data:{labels:["2026-05-13", "2026-05-16", "2026-05-17", "2026-05-18"],datasets:[{label:"平均価格(万円)",data:[20073, 19685, 14830, 14830],borderColor:"#e74c3c",fill:true,backgroundColor:"#e74c3c10",tension:0.3}]},options:{...opt,plugins:{...opt.plugins,title:{display:true,text:"平均価格推移（万円）"}}}});
+new Chart(document.getElementById("c3"),{type:"line",data:{labels:["2026-05-13", "2026-05-16", "2026-05-17", "2026-05-18"],datasets:[{label:"平均利回り(%)",data:[4.37, 4.4, 4.42, 4.42],borderColor:"#27ae60",fill:true,backgroundColor:"#27ae6010",tension:0.3}]},options:{...opt,plugins:{...opt.plugins,title:{display:true,text:"平均利回り推移（%）"}}}});
+
+        new Chart(document.getElementById("c4"),{
+          type:"line",
+          data:{labels:["2026-05-13", "2026-05-16", "2026-05-17", "2026-05-18"],datasets:[{"label":"千石エリア","data":[4, 3, 1, 1],"borderColor":"#2980b9","backgroundColor":"#2980b922","tension":0.3,"fill":false},{"label":"白山エリア","data":[1, 1, 0, 0],"borderColor":"#27ae60","backgroundColor":"#27ae6022","tension":0.3,"fill":false},{"label":"大塚エリア","data":[2, 2, 1, 1],"borderColor":"#e67e22","backgroundColor":"#e67e2222","tension":0.3,"fill":false},{"label":"小石川エリア","data":[1, 1, 1, 1],"borderColor":"#8e44ad","backgroundColor":"#8e44ad22","tension":0.3,"fill":false},{"label":"その他","data":[5, 1, 3, 3],"borderColor":"#95a5a6","backgroundColor":"#95a5a622","tension":0.3,"fill":false}]},
+          options:{responsive:true,maintainAspectRatio:false,
+            plugins:{title:{display:true,text:"エリア別掲載件数推移"}}}
+        });
+</script>
+
+</body>
+</html>
